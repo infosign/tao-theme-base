@@ -1,0 +1,31 @@
+{
+
+    "name": "infosign/tao-theme-base",
+    "description" : "",
+    "type" : "tao-extension",
+    "authors" : [
+        {
+        "name": "Infosign Inc."
+        }
+    ],
+    "keywords" : [
+        "tao",
+        "computer-based-assessment"
+    ],
+    "homepage" : "http://www.infosign.co.jp",
+    "license" : [
+        "GPL-2.0"
+    ],
+    "extra" : {
+        "tao-extension-name" : "taoThemeBase"
+    },
+    "minimum-stability" : "dev",
+    "require": {
+        "oat-sa/oatbox-extension-installer": "dev-master"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "infosign\\taoThemeBase\\" : ""
+        }
+    } 
+}

@@ -1,0 +1,50 @@
+@import "../../../../../../../tao/views/scss/inc/fonts/tao-icon-vars";
+
+.qti-navigator {
+
+    .icon{
+
+        &-viewed {
+            &:before {
+                @include icon-checkbox();
+            }
+        }
+        &-unseen {
+            &:before {
+                @include icon-checkbox();
+            }
+        }
+
+        &-answered {
+            &:before {
+                @include icon-checkbox-checked();
+            }
+        }
+
+        &-viewed, &-answered {
+            &:before {
+                position: relative;
+                z-index: 3;
+            }
+            &:after {
+                @include icon-checkbox-bg;
+                color:white !important;
+                left:-1em;
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+
+
+    .qti-navigator-filter {
+        width: 33.333334%;
+        .qti-navigator-tab {
+            padding: 0 .5rem;
+            font-size: 1.1rem;
+            display:inline-block;
+            width: 100%;
+            text-align:center;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+////
+/// TAO CSS SDK
+/// Media query which targets smaller screens (back end only)
+/// @group Item media queries
+////
+
+// Edge styles go here
+@supports (-ms-ime-align:auto) {
+
+    .qti-navigator {
+
+        .icon{
+            &-viewed, &-answered, &-unseen {
+                &:after {
+                    left:auto !important;
+                    top: 0 !important;
+                    z-index: 2;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
